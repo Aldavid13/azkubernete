@@ -297,3 +297,11 @@ git commit -m "first commit"
 git config --global user.name "David Guerrero"
 git commit -m "first commit"
 git add .
+git commit -m "first commit"
+git brach -M Master
+git branch -M Master
+git remote add origin https://github.com/Aldavid13/azkubernete.git
+git push -u origin Master
+rm deployment-services-backend-02-jenkins.yaml.save
+ls -la
+git add .
