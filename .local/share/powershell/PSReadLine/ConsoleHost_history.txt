@@ -1,0 +1,299 @@
+Remove-AzResourceGroup -Name gateway
+Remove-AzResourceGroup -Name Pruebas_Ping
+kubectl get
+kubectl get nodes
+az aks Get-Credential --resource-group kubernetes --name Cluster_kubernetes
+kubectl get nodes
+az aks Get-Credential --resource-group kubernetes --name Cluster_kubernetes
+az aks Get-Credentials --admin --Cluster_kubernetes --resource-group kubernetes
+az aks list
+az aks Get-Credentials --admin --name Cluster_kubernetes --resource-group kubernetes
+az aks list
+kubectl get nodes
+cd
+ls -la
+nano
+ls -la
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+kubectl get pods
+kubectl get nodes
+kubectl get services
+az aks browse --resource-group kubernetes --name Cluster_kubernetes --listen-port 8002
+cat deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+cat deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+kubectl get nodes
+kubectl get pods
+kubectl get services
+az aks browse --resource-group kubernetes --name Cluster_kubernetes --listen-port 8002
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+kubectl get services
+kubectl get pods
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+kubectl get pods
+kubectl get services
+az aks browse --resource-group kubernetes --name Cluster_kubernetes --listen-port 8002
+kubectl get services
+kubectl get pods
+cat deployment-services-backend-02-jenkins.yaml
+kubectl get services
+kubectl --remove 
+kubectl delete service back
+kubectl delete service backend-02-jenkins-service
+kubectl get pods
+kubectl expose pod pract-backend-02-deployment-586ff9b946-bb45c --type LoadBalancer --port 8080 --Target-port=80
+kubectl expose pod pract-backend-02-deployment-586ff9b946-bb45c --type LoadBalancer --port 8080 --target-port=80
+kubectl get services
+kubectl delete service backend-02-jenkins-service
+kubectl get services
+kubectl delete service pract-backend-02-deployment-586ff9b946-bb45c
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+kubectl get services
+kubectl expose pod pract-backend-02-deployment-586ff9b946-bb45c --type LoadBalancer --port 8080 --target-port=31555
+kubectl get services
+kubectl expose pod pract-backend-02-deployment-586ff9b946-bb45c --type LoadBalancer --port 31555 --target-port=31669
+kubectl delete service pract-backend-02-deployment-586ff9b946-bb45c
+kubectl expose pod pract-backend-02-deployment-586ff9b946-bb45c --type LoadBalancer --port 31555 --target-port=31669
+kubectl get services
+kubectl delete service pract-backend-02-deployment-586ff9b946-bb45c
+kubectl get services
+kubectl expose pod pract-backend-02-deployment-586ff9b946-bb45c --type LoadBalancer --port 31555 --target-port=31669
+kubectl get services
+kubectl get pods
+az aks browse --resource-group kubernetes --name Cluster_kubernetes --listen-port 8002
+az aks browse --resource-group kubernetes --name Cluster_kubernetes --listen-port 31555
+az aks browse --resource-group kubernetes --name Cluster_kubernetes --listen-port 8080
+az aks browse --resource-group kubernetes --name Cluster_kubernetes --listen-port 30782
+kubectl get pods# Mostrar todas las implementaciones de todos los espacios de nombres
+kubectl get deployments --all-namespaces=true
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+kubectl get services
+kubectl expose pod pract-backend-02-deployment-586ff9b946-bb45c --type LoadBalancer --port 31880 --target-port=8080
+kubectl get pods
+kubectl expose pod pract-backend-02-deployment-5577bd8587-2bg11 --type LoadBalancer --port 31880 --target-port=8080
+kubectl expose pod pract-backend-02-deployment-5577bd8587-2bgll --type LoadBalancer --port 31880 --target-port=8080
+kubectl get services
+kubectl delete service pract-backend-02-deployment-586ff9b946-bb45c
+kubectl get services
+nano
+kubectl apply -f azure-vote.yaml
+kubectl get pods
+kubectl get services
+kubectl get pods
+kubectl get services
+kubectl remove services pract-backend-02-deployment-5577bd8587-2bgll
+kubectl delete service pract-backend-02-deployment-5577bd8587-2bgll
+kubectl get services
+kubectl apply -f azure-vote.yaml
+kubectl get services
+20.84.1.35
+kubectl get deployments --all-namespaces=true
+kubectl remove deployments azure-vote-back
+kubectl remove deploy azure-vote-back
+kubectl remove azure-vote.yaml
+kubectl remove deployment azure-vote-back
+kubectl remove deployments azure-vote-back
+kubectl delete deployments --namespace=default azure-vote-back
+kubectl delete deployments --namespace=default azure-vote-frot
+kubectl delete deployments --namespace=default azure-vote-front
+kubectl get deployments --all-namespaces=true
+kubectl get services
+kubectl delete service azure-vote-back
+kubectl delete service azure-vote-front
+kubectl get pods
+ls -la
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+kubectl get services
+ls -la
+nano deployment-services-backend-02-jenkins.yaml
+kubectl get services
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+ az --version 
+kubectl get services --namespace default -o wide -w ingress-nginx-controller
+kubectl get services --namespace kube-system -o wide -w ingress-nginx-controller
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+kubectl get services
+kubectl get pods
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+curl -l -k http://10.0.222.46/api/imprimirTexto
+curl -l -k http://10.0.222.46
+curl -l -k http://10.0.171.161
+curl
+curl 10.0.171.161
+curl http://20.121.106.45/
+curl http://20.121.106.45/api/imprimirTexti
+curl http://20.121.106.45/api/imprimirTexto
+curl https://20.121.106.45/api/imprimirTexto
+curl api/imprimirTexto
+nano deployment-services-backend-02-jenkins.yaml
+curl backend-02-jenkins.2130d370045e4ec6a6c3.eastus.aksapp.io
+nano deployment-services-backend-02-jenkins.yaml
+kubectl describe services
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+kubectl describe services
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl describe services
+kubectl describe pods
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+kubectl get pods
+kubectl get services
+nano deployment-services-backend-02-jenkins.yaml
+kubectl describe pods pract-backend-02-deployment-b6998f885-drz8n
+bin bash/
+kubectl exec -it --namespace default pod-name pract-backend-02-deployment-b6998f885-drz8n
+kubectl exec -it --namespace default --podname pract-backend-02-deployment-b6998f885-drz8n
+kubectl exec -it --namespace default --pod-name pract-backend-02-deployment-b6998f885-drz8n
+kubectl -n default exec -it pract-backend-02-deployment-b6998f885-drz8n -- /bin/sh
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+kubectl logs nginx
+kubectl logs all container
+kubectl logs all containers
+kubectl get pods
+kubectl logs pract-backend-02-deployment-b6998f885-drz8n
+ls -la
+nano deployment-services-backend-02-jenkins.yaml
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml
+ls -la
+kubectl apply -f deployment-services-backend-02-jenkins.yaml.save
+nano deployment-services-backend-02-jenkins.yaml.save
+kubectl apply -f deployment-services-backend-02-jenkins.yaml
+nano deployment-services-backend-02-jenkins.yaml.save
+az aks shwo
+az aks show
+az aks show --name Cluster_kubernetes --resource-group kubernetes
+AKS_ID=$(az aks show \`
+    --resource-group kubernetes \`
+    --name Cluster_kubernetes \`
+    --query id -o tsv)
+ls -la
+nano role-default-namespace.yaml
+kubectl gets all
+kubectl get all
+nano rolebinding-default-namespace.yaml
+nano role-default-namespace.yaml
+kubectl apply -f role-default-namespace.yaml
+kubectl apply -f rolebinding-default-namespace.yaml
+az aks get-credentials --resource-group kubernetes --name Cluster_kubernetes --overwrite-existing
+az aks browse --name
+              --resource-group
+              [--disable-browser]
+              [--listen-address]
+az aks browse --name kubernetes
+              --resource-group Cluster_kubernetes
+              [--disable-browser]
+              [--listen-address]
+az aks browse --name kubernetes --resource-group Cluster_kubernetes
+az aks browse --name Cluster_kubernetes --resource-group kuberbetes
+az aks browse --name Cluster_kubernetes --resource-group kubernetes
+ls -la
+remove ./deployment-services-backend-02-jenkins.yaml.save
+Remove-Az?
+Remove-
+kubectl create namespace dev
+ls -la
+kubectl create namespace dev
+nano role-default-namespace.yaml
+nano rolebinding-default-namespace.yaml
+kubectl apply -f rolebinding-default-namespace.yaml
+kubectl create namespace dev
+az aks get-credentials --resource-group kubernetes --name Cluster_kubernetes --overwrite-existing
+kubectl create namespace dev
+''
+az aks show -g kubernetes -n Cluster_kubernetes --query aadProfile
+nano rolebinding-default-namespace.yaml
+nano role-default-namespace.yaml
+kubectl get pods --all-namespaces
+nano clusterRole.yaml
+nano ClusterRoleBinding.yaml
+nano rolebinding-default-namespace.yaml
+nano ClusterRoleBinding.yaml
+nano clusterRole.yaml
+nano ClusterRoleBinding.yaml
+kubectl apply -f clusterRole.yaml
+kubectl apply -f ./ClusterRoleBinding.yaml
+kubectl create namespace dev
+az aks show -g kubernetes -n Cluster_kubernetes --query aadProfile
+az aks get-credentials --resource-group kubernetes --name Cluster_kubernetes --overwrite-existing
+kubectl create namespace dev
+az aks get-credentials --resource-group kubernetes --name Cluster_kubernetes --overwrite-existing --admin
+kubectl create namespace dev
+git
+git --version
+git init
+git commit -m "first commit"
+ git config --global user.email "2007-4444@itla.edu.do"
+git config --global user.name "David Guerrero"
+git commit -m "first commit"
+git add .

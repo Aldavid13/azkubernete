@@ -1,0 +1,65 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pract-backend-02-deployment
+spec:
+  selector:
+   matchLabels:
+    app: backend-02-jenkins
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: backend-02-jenkins
+    spec:
+      containers:
+        - name: backend-02-jenkins
+          image: 'aldavid/backend-02:latest'
+          ports:
+            - containerPort: 8080
+              name: prac-02-port
+          imagePullPolicy: Always
+          env:
+          - name: nombre
+            value: "David"
+
+
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: backend-jenkins-svc
+spec:
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort : 8080
+  selector:
+   app: backend-02-jenkins
+
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: backend-02-jenkins-ingress
+  annotations:
+    kubernetes.io/ingress.class: addon-http-application-routing
+    nginx.ingress.kubernetes.io/rewrite-target: /
+  
+spec:
+  rules:
+  - host: backend-02-jenkins.2130d370045e4ec6a6c3.eastus.aksapp.io
+    http:
+      paths:
+      - path: /(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: backend-jenkins-svc
+            port:
+              name: http
+           
+
+  
+
