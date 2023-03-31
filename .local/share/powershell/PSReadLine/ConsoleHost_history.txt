@@ -305,3 +305,9 @@ git push -u origin Master
 rm deployment-services-backend-02-jenkins.yaml.save
 ls -la
 git add .
+git commit -m "Eliminando archivo file.txt"
+git push -u origin Master
+ls -la
+kubectl delete -f azure-vote.yaml --all
+rm azure-vote.yaml
+git add .
