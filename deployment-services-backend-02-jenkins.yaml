@@ -14,16 +14,22 @@ spec:
     spec:
       containers:
         - name: backend-02-jenkins
-          image: 'aldavid/backend-02:latest'
+          image: 'aldavid/azure_pract_1:latest'
           ports:
             - containerPort: 8080
               name: prac-02-port
           imagePullPolicy: Always
           env:
-          - name: nombre
+          - name: nombre          
             value: "David"
-
-
+          - name: TOKEN 
+            value: "sp=racwdli&st=2023-04-22T15:46:41Z&se=2023-05-31T23:46:41Z&sv=2021-12-02&sr=c&sig=TX%2B6mbcS7cleToNCJJ8JisyMQ%2BPvCBd1zn5ZnKnsv9w%3D"
+          - name: BLOB_URL
+            value: "https://aldavid01.blob.core.windows.net/write"
+          - name: CONTAINER_NAME
+            value: "write"
+          
+          
 ---
 kind: Service
 apiVersion: v1
@@ -49,7 +55,7 @@ metadata:
   
 spec:
   rules:
-  - host: backend-02-jenkins.2130d370045e4ec6a6c3.eastus.aksapp.io
+  - host: backend-02-jenkins.2b91dc0a09f545d5bdb1.canadaeast.aksapp.io
     http:
       paths:
       - path: /(.*)
@@ -58,7 +64,7 @@ spec:
           service:
             name: backend-jenkins-svc
             port:
-              name: http
+              number: 80
            
 
   
