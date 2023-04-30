@@ -1,4 +1,6 @@
+
 apiVersion: apps/v1
+
 kind: Deployment
 metadata:
   name: pract-backend-02-deployment
@@ -23,13 +25,13 @@ spec:
               memory: 250Mi
             limits:
               cpu: 800m
-              memory: 300Mi
+              memory: 300M
           ports:
             - containerPort: 8080
               name: prac-02-port
           imagePullPolicy: Always
           env:
-          - name: nombre
+          - name: nombre          
             value: "David"
           - name: TOKEN 
             value: "sp=racwdli&st=2023-04-22T15:46:41Z&se=2023-05-31T23:46:41Z&sv=2021-12-02&sr=c&sig=TX%2B6mbcS7cleToNCJJ8JisyMQ%2BPvCBd1zn5ZnKnsv9w%3D"
@@ -37,8 +39,6 @@ spec:
             value: "https://aldavid01.blob.core.windows.net/write"
           - name: CONTAINER_NAME
             value: "write"
-
-
 ---
 kind: Service
 apiVersion: v1
@@ -74,7 +74,6 @@ spec:
             name: backend-jenkins-svc
             port:
               number: 80
-
 
 ---
 apiVersion: autoscaling/v2
