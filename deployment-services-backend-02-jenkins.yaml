@@ -12,9 +12,18 @@ spec:
       labels:
         app: backend-02-jenkins
     spec:
+      nodeSelector:
+        grupo-de-nodos: grupo3
       containers:
         - name: backend-02-jenkins
-          image: 'aldavid/backend-02:latest'
+          image: 'aldavid/azure_pract_1:latest'
+          resources:
+            requests:
+              cpu: 150m
+              memory: 250Mi
+            limits:
+              cpu: 800m
+              memory: 300Mi
           ports:
             - containerPort: 8080
               name: prac-02-port
@@ -22,6 +31,12 @@ spec:
           env:
           - name: nombre
             value: "David"
+          - name: TOKEN 
+            value: "sp=racwdli&st=2023-04-22T15:46:41Z&se=2023-05-31T23:46:41Z&sv=2021-12-02&sr=c&sig=TX%2B6mbcS7cleToNCJJ8JisyMQ%2BPvCBd1zn5ZnKnsv9w%3D"
+          - name: BLOB_URL
+            value: "https://aldavid01.blob.core.windows.net/write"
+          - name: CONTAINER_NAME
+            value: "write"
 
 
 ---
@@ -45,11 +60,11 @@ metadata:
   name: backend-02-jenkins-ingress
   annotations:
     kubernetes.io/ingress.class: addon-http-application-routing
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
   
 spec:
   rules:
-  - host: backend-02-jenkins.2130d370045e4ec6a6c3.eastus.aksapp.io
+  - host: backend-02-jenkins.2b91dc0a09f545d5bdb1.canadaeast.aksapp.io
     http:
       paths:
       - path: /(.*)
@@ -58,8 +73,39 @@ spec:
           service:
             name: backend-jenkins-svc
             port:
-              name: http
-           
+              number: 80
 
-  
+
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: hpa-backend
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: pract-backend-02-deployment
+  minReplicas: 1
+  maxReplicas: 3
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 50
+  behavior:
+    scaleDown:
+      stabilizationWindowSeconds: 30
+      policies:
+      - type: Percent
+        value: 25
+        periodSeconds: 60
+    scaleUp:
+      stabilizationWindowSeconds: 30
+      policies:
+      - type: Percent
+        value: 75
+        periodSeconds: 60
 
